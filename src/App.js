@@ -1,10 +1,17 @@
 import './App.css';
+import Header from './Header';
+import Nav from './Nav';
+import Main from './Main';
+import Footer from './Footer';
 
 function App() {
   return (
-    <div>
-      <h1>Hello Boss!</h1>
-    </div>
+    <>
+      <Header/>
+      <Nav/>
+      <Main/>
+      <Footer/>
+    </>
   );
 }
  
