@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.box {
+    font-family: 'Karla', sans-serif;
+    color: #495E57;
+    background-color: #D9D9D9;
+    height: 400px;
+}
+.box2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 400px;
+    flex-wrap: wrap;
+}
+.footer1{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 100px;
+    margin-left: 70px;
+    flex-wrap: wrap;
+}
+.footer2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    }
