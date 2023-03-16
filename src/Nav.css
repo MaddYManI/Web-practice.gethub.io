@@ -3,6 +3,7 @@
   padding: 0;
   font-family: 'Karla', sans-serif;
 }
+/*
 .containers {
   display: flex;
   flex-wrap: wrap;
@@ -21,10 +22,7 @@ ul {
   gap: 10px;
   align-items: center;
 
-
-  /*
   flex-direction: column;
-  */
 }
 
 li {
@@ -54,4 +52,30 @@ nav ul li::after {
 
 nav ul li:hover::after {
   width: 100%;
+}
+*/
+
+/*grid css starts here*/
+
+.containers {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 1fr;
+}
+header nav img {
+  grid-column: 1;
+  margin-left: 280px;
+}
+header nav ul {
+  grid-column: 2;
+  list-style-type: none;
+}
+header nav ul li {
+  display: inline-block;
+  padding-top: 10px;
+  padding-right: 15px;
+}
+
+@media screen(max-width:) {
+  
 }
