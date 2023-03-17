@@ -1,7 +1,10 @@
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Karla', sans-serif;
 }
+/*
 .box {
     font-family: 'Karla', sans-serif;
     color: #495E57;
@@ -29,3 +32,28 @@
     padding: 0;
     font-family: 'Karla', sans-serif;
     }
+*/
+.box {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 400px;
+    grid-template-areas: "photo navigation contact socialmedia";
+    background-color: #D9D9D9;
+}
+.navigation {
+    grid-area: navigation;
+    margin-top: 100px;
+}
+.contact {
+    grid-area: contact;
+    margin-top: 100px;
+}
+.socialmedia {
+    grid-area: socialmedia;
+    margin-top: 100px;
+}
+.footer2 {
+    display: grid;
+    margin-left: 5px;
+    padding-bottom: 5px;
+}
