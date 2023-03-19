@@ -4,15 +4,414 @@
 }
 .hero {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 2fr;
-    grid-template-areas: "text dishphoto";
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows: 406px;
+    grid-template-areas: "sample text dishphoto samples";
     background-color: #21342E;
 }
+
 .textfont {
-    font-family: 'Markazi Text', serif;
+    grid-area: text;
     color: #F4CE14;
+    align-self: center;
+}
+.textstyle{
+    font-family: 'Markazi Text', serif;
+    font-size: 56px;
+    font-weight: 100;
+}
+.textcity{
+    font-family: 'Markazi Text', serif;
+    font-size: 32px;
+    font-weight: 400;
 }
 .lines {
+    font-family: 'Karla', serif;
+    font-size: 26px;
+    font-weight: 400;
     color: white;
+    padding-bottom: 40px;
+}
+.button{
+    grid-area: text;
+    display: grid;
+    width: 200px;
+    height: 60px;
+    border-radius: 16px;
+    color: black;
+    background-color: #F4CE14;
+    align-items: center;
+    justify-items: center;
+    font-family: 'Karla', serif;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.overlay {
+    grid-area: dishphoto;
+    display: grid;
+    width: 375px;
+    height: 436px;
+    border-radius: 16px;
+    margin-top: 23px;
+    margin-left: 63px;
+}
+
+.highlights{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,0.5fr);
+    margin-top: 50px;
+    grid-column-gap: 34px;
+    grid-row-gap: 30px;
+    /*grid-template-areas:"displayname displayname displayname displayname buttons"
+                        "dummy cards cards cards dummys";*/
+}
+.specialfoods{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    align-self: center;
+    font-family: 'Markazi Text', serif;
+    font-size: 64px;
+    font-weight: 400;
+}
+.online_button{
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 4/5;
+    width: 200px;
+    height: 60px;
+    border-radius: 16px;
+    color: black;
+    background-color: #F4CE14;
+    align-items: center;
+    justify-items: center;
+    font-family: 'Karla', serif;
+    font-size: 18px;
+    font-weight: 500;
+    justify-self: end;
+    align-self: center;
+    cursor: pointer;
+}
+.highlight-cards-top1{
+    grid-area: cards;
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    width: 265px;
+    height: 186px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+.highlight-cards-bottom1{
+    grid-area: cards;
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    width: 265px;
+    height: 253px;
+    margin-top: 186px;
+    background-color: #EDEFEE;
+}
+.dishname {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    font-family: 'Markazi Text', serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 10px;
+}
+.dishprice{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    font-family: 'Markazi Text', serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px;
+    color: #EE9972;
+}
+.dishdescription{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    font-family: 'Karla', serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px;
+}
+.outfordelivery {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    font-family: 'Karla', serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 10px;
+    align-self: center;
+    cursor: pointer;
+}
+.bikeimage{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    width: 17px;
+    height: 11px;
+    justify-self: end;
+    align-self: center;
+}
+.highlight-cards-top2{
+    grid-area: cards;
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 3/4;
+    width: 265px;
+    height: 186px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+.highlight-cards-bottom2{
+    grid-area: cards;
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 3/4;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    width: 265px;
+    height: 253px;
+    margin-top: 186px;
+    background-color: #EDEFEE;
+}
+.highlight-cards-top3{
+    grid-area: cards;
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 4/5;
+    width: 265px;
+    height: 186px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+.highlight-cards-bottom3{
+    grid-area: cards;
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 4/5;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    width: 265px;
+    height: 253px;
+    margin-top: 186px;
+    background-color: #EDEFEE;
+}
+.Orderdelivery{display: none;}
+.menuslider{display: none;}
+.slidercontent{display: none;}
+@media only screen and (max-width:600px) {
+    .hero {
+        grid-template-columns: 1fr 0.5fr;
+        grid-template-rows: 347px;
+        grid-template-areas: "text dishphoto";
+        background-color: #21342E;
+    }
+    .textstyle{
+        font-size: 56px;
+    }
+    .textcity{
+        font-size: 40px;
+    }
+    .lines {
+        font-size: 16px;
+        font-weight: 700;
+        padding-bottom: 20px;
+    }
+    .overlay {
+        grid-area: dishphoto;
+        width: 147px;
+        height: 152px;
+        margin: 0;
+        align-self: center;
+        justify-self: center;
+    }
+    .button{
+        width: 147px;
+        height: 35px;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .highlights {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,0.1fr);
+        justify-items: start;
+        margin: 10px;
+        grid-column-gap: 0;
+        grid-row-gap: 0;
+    }
+    .specialfoods{
+        display: none;
+    }
+    .online_button{
+        display: none;
+    }
+    .highlight-cards-top1{
+        display: none;
+    }
+    .highlight-cards-bottom1{
+        grid-row: 1/2;
+        grid-column: 1;
+        grid-template-rows: repeat(3,0.1fr);
+        margin-top: 0;
+        width: 100%;
+        height: 140px;
+        border-top: 2px solid #EDEFEE;
+        background-color: white;
+    }
+    .highlight-cards-top2{
+        display: none;
+    }
+    .highlight-cards-bottom2{
+        grid-row: 2/3;
+        grid-column: 1;
+        grid-template-rows: repeat(3,0.1fr);
+        width: 100%;
+        height: 140px;
+        margin-top: 0;
+        background-color: white;
+        border-top: 2px solid #EDEFEE;
+    }
+    .highlight-cards-top3{
+        display: none;
+    }
+    .highlight-cards-bottom3{
+        grid-row: 3/4;
+        grid-column: 1;
+        grid-template-rows: repeat(3,0.1fr);
+        width: 100%;
+        height: 140px;
+        margin-top: 0;
+        background-color: white;
+        border-top: 2px solid #EDEFEE;
+    }
+    .outfordelivery{
+        display: none;
+    }
+    .bikeimage {
+        display: none;
+    }
+    .dishname{
+        margin: 0;
+        margin-top: 10px;
+        grid-row: 1/2;
+        grid-column: 1;
+        font-family: 'Karla', serif;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .dishdescription{
+        margin: 0;
+        grid-row: 2/3;
+        grid-column: 1;
+        font-family: 'Karla', serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #495E57;
+    }
+    .dishprice{
+        grid-row: 3/4;
+        grid-column: 1;
+        margin: 0;
+        font-family: 'Karla', serif;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .Orderdelivery{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 40px;
+        margin-left: 10px;
+        font-family: 'Karla', serif;
+        font-size: 18px;
+        font-weight: 800;
+    }
+    .menuslider {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: 1fr;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        overflow-x: auto;
+    }
+    .menuslider::-webkit-scrollbar{
+        width: 0;
+    }
+    .slidercontent {
+        display: grid;
+        width: 101px;
+        height: 40px;
+        margin-left: 10px;
+        border-radius: 16px;
+        color: #495E57;
+        background-color: #EDEFEE;
+        align-items: center;
+        justify-items: center;
+        font-family: 'Karla', serif;
+        font-size: 16px;
+        font-weight: 800;
+        cursor: pointer;
+    }
+/*This css is for the highlights which looks like website in mobile version*/
+    /*.highlights{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,0.5fr);
+        justify-items: center;
+
+    }
+    .specialfoods{
+        grid-row: 1/2;
+        grid-column: 1;
+        justify-self: start;
+    }
+    .online_button{
+        grid-row: 1/2;
+        grid-column: 1;
+        width: 147px;
+        height: 35px;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .highlight-cards-top1 {
+        grid-row: 2/3;
+        grid-column: 1;
+        justify-self: center;
+    }
+    .highlight-cards-bottom1{
+        grid-row: 2/3;
+        grid-column: 1;
+        justify-self: center;
+    }
+    .highlight-cards-top2 {
+        grid-row: 3/4;
+        grid-column: 1;
+    }
+    .highlight-cards-bottom2{
+        grid-row: 3/4;
+        grid-column: 1;
+    }
+    .highlight-cards-top3 {
+        grid-row: 4/5;
+        grid-column: 1;
+    }
+    .highlight-cards-bottom3 {
+        grid-row: 4/5;
+        grid-column: 1;
+    }*/
+}
+@media only screen and (max-width:400px){
+    .textstyle{
+        font-size: 43px;
+    }
+    .textcity{
+        font-size: 35px;
+    }
 }
