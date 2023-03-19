@@ -1,9 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Markazi Text', serif;
+  text-decoration: none;
 }
-/*
+/*Flex CSS 
 .containers {
   display: flex;
   flex-wrap: wrap;
@@ -66,6 +66,8 @@ nav ul li:hover::after {
   margin-left: 15%;
   margin-right: 15%;
   padding: 20px;
+  font-family: 'Markazi Text', serif;
+  font-size: 20px;
 }
 header nav img {
   grid-area: logo;
@@ -80,12 +82,9 @@ li {
   display: inline-block;
   margin-right: 10px;
 }
-
-
 input {
   display: none;
 }
-
 @media only screen and (max-width:600px) {
   .containers {
     grid-template-columns: 1fr;
@@ -134,5 +133,5 @@ input {
   }
   input:checked ~ nav .list1 {
     display: grid;
-  }
+   }
 }

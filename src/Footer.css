@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Karla', sans-serif;
 }
 /*
 .box {
@@ -39,6 +38,7 @@
     grid-template-rows: 400px;
     grid-template-areas: "photo navigation contact socialmedia";
     background-color: #D9D9D9;
+    font-family: 'Karla', sans-serif;
 }
 .navigation {
     grid-area: navigation;
