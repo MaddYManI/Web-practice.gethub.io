@@ -38,13 +38,13 @@
     width: 200px;
     height: 60px;
     border-radius: 16px;
-    color: black;
     background-color: #F4CE14;
     align-items: center;
     justify-items: center;
     font-family: 'Karla', serif;
     font-size: 18px;
     font-weight: 500;
+    border: white;
     cursor: pointer;
 }
 .overlay {
@@ -82,8 +82,8 @@
     width: 200px;
     height: 60px;
     border-radius: 16px;
-    color: black;
     background-color: #F4CE14;
+    border: white;
     align-items: center;
     justify-items: center;
     font-family: 'Karla', serif;
@@ -350,6 +350,7 @@
         height: 40px;
         margin-left: 10px;
         border-radius: 16px;
+        border: white;
         color: #495E57;
         background-color: #EDEFEE;
         align-items: center;

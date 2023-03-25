@@ -13,22 +13,22 @@ function Body () {
                     <h1 className='textstyle'>Little Lemon</h1>
                     <h3 className='textcity'>Chicago</h3>
                     <p className='lines'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-                    <span className='button'>Reserve a table</span>
+                    <button type="button" className='button'>Reserve a table</button>
                 </label>
                 <img src={restaurantfood} alt ="Restaurantfood" className='overlay' />
             </div>
             <label className='Orderdelivery'>Order for delivery</label>
             <ul className='menuslider'>
-                <li className='slidercontent'>Lunch</li>
-                <li className='slidercontent'>Mains</li>
-                <li className='slidercontent'>Desserts</li>
-                <li className='slidercontent'>A La Carte</li>
-                <li className='slidercontent'>Specials</li>
-                <li className='slidercontent'>Weekends</li>
+                <li><button type='button' className='slidercontent'>Lunch</button></li>
+                <li><button type='button' className='slidercontent'>Mains</button></li>
+                <li><button type='button' className='slidercontent'>Desserts</button></li>
+                <li><button type='button' className='slidercontent'>A La Carte</button></li>
+                <li><button type='button' className='slidercontent'>Specials</button></li>
+                <li><button type='button' className='slidercontent'>Weekends</button></li>
             </ul>
             <div className='highlights'>
                 <h1 className='specialfoods'>Special</h1>
-                <span className='online_button'>Online order</span>
+                <button type='button' className='online_button'>Online order</button>
                 <img src={greeksalad} alt ="Greek Salad" className='highlight-cards-top1' />
                 <label className='highlight-cards-bottom1'>
                     <h3 className='dishname'>Greek salad</h3>

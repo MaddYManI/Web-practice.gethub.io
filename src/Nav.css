@@ -3,7 +3,7 @@
   padding: 0;
   text-decoration: none;
 }
-/*Flex CSS 
+/*Flex CSS
 .containers {
   display: flex;
   flex-wrap: wrap;
@@ -66,8 +66,6 @@ nav ul li:hover::after {
   margin-left: 15%;
   margin-right: 15%;
   padding: 20px;
-  font-family: 'Markazi Text', serif;
-  font-size: 20px;
 }
 header nav img {
   grid-area: logo;
@@ -77,11 +75,18 @@ header nav ul {
   grid-area: menus;
   list-style-type: none;
   align-self: center;
+  color: #495E57;
 }
 li {
   display: inline-block;
+  color: #495E57;
   margin-right: 10px;
   font-weight: 500;
+  font-family: 'Markazi Text', serif;
+  font-size: 20px;
+}
+.links:visited {
+  color: #495E57;
 }
 input {
   display: none;
