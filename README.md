@@ -1,2 +1,9 @@
-This is an capstone project of responsive web design mostly focused on the responsive web pages.
-![image](https://user-images.githubusercontent.com/101639758/227698375-2d270442-5a7b-4625-9d5f-1837934743a4.png) Homepage
+# Little Lemon
+### This is an capstone project of responsive web design mostly focused on the UX/UI. A restuarant with less UX/UI in table booking form.
+<img src ="https://github.com/MaddYManI/Web-practice/blob/main/localhost_3000_%20(1).png" alt = "Homepage" height= "1000px">
+
+### The above image is the responsive homepage for website.
+
+<img src="https://github.com/MaddYManI/Web-practice/blob/main/Mobile_homepage.png" alt="Mobile_Homepage" height= "1000px">
+
+### The above image is the resposive homepage for mobile version.
