@@ -1,13 +1,12 @@
-import './Reservation.css'
+import './BookingPage.css'
 
-function Reservation () {
-    const [availableTimes , setavailableTimes ] = useState('17:00');
+function BookingForm () {
     return(
         <form className='reservation_details'>
             <label for="res-date">Choose date</label>
             <input type="date" id="res-date"/>
             <label for="res-time">Choose time</label>
-            <select id="res-time " onChange={setavailableTimes}>
+            <select id="res-time ">
                 <option>17:00</option>
                 <option>18:00</option>
                 <option>19:00</option>
@@ -26,4 +25,4 @@ function Reservation () {
         </form>
     );
 }
-export default Reservation;
+export default BookingForm;
