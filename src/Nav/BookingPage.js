@@ -1,18 +1,23 @@
+import { useReducer, useState } from 'react';
 import './BookingPage.css'
 
-function BookingForm () {
+function BookingForm (props) {
+    function updateTimes (state, action){
+        return state;
+    }
+    const [state, dispatch] = useReducer(updateTimes, props.avaliableTimes)
+
     return(
         <form className='reservation_details'>
             <label for="res-date">Choose date</label>
             <input type="date" id="res-date"/>
             <label for="res-time">Choose time</label>
             <select id="res-time ">
-                <option>17:00</option>
-                <option>18:00</option>
-                <option>19:00</option>
-                <option>20:00</option>
-                <option>21:00</option>
-                <option>22:00</option>
+                {props.avaliableTimes.map((e) =>{
+                    return(
+                    <option>{e}</option>
+                    )
+                    })}
             </select>
             <label for="guests">Number of guests</label>
             <input type="number" placeholder="1" min="1" max="10" id="guests"/>

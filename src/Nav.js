@@ -7,8 +7,14 @@ import Login from "./Nav/Login"
 import Menu from "./Nav/Menu"
 import BookingForm from "./Nav/BookingPage"
 import Order_online from "./Nav/Order_Online"
+import { useReducer, useState } from 'react';
 
 function Nav (){
+    const [avaliableTimes, setavaliableTimes] = useState(initializeTimes)
+    function initializeTimes (){
+        return (['17:00', '18:00', '19:00','20:00', '21:00', '22:00'])
+    }
+
     return(
         <header className="box2">
             <input type="checkbox" id="toggle"/>
@@ -32,7 +38,7 @@ function Nav (){
                 <Route path="/" element={<Homepage />} />
                 <Route path="/aboutme" element={<Aboutme />} />
                 <Route path="/menu" element={<Menu />} />
-                <Route path="/BookingPage" element={<BookingForm />} />
+                <Route path="/BookingPage" element={<BookingForm avaliableTimes={avaliableTimes}/>} />
                 <Route path="/order_online" element={<Order_online />} />
                 <Route path="/login" element={<Login/>} />
             </Routes>
