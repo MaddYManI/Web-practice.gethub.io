@@ -5,18 +5,11 @@ import Homepage from "./Nav/Homepage"
 import Aboutme from "./Nav/Aboutme"
 import Login from "./Nav/Login"
 import Menu from "./Nav/Menu"
-import BookingForm from "./Nav/BookingPage"
 import Order_online from "./Nav/Order_Online"
-import { useReducer } from 'react';
+import { useState,useReducer,useEffect} from 'react';
+import BookingPage from "./Nav/BookingPage"
 
 function Nav (){
-    function initializeTimes (){
-        return (['17:00', '18:00', '19:00','20:00', '21:00', '22:00'])
-    }
-    function updateTimes (state, action){
-        return state;
-    }
-    const [state, dispatch] = useReducer(updateTimes, initializeTimes)
 
     return(
         <BrowserRouter>
@@ -42,7 +35,7 @@ function Nav (){
                         <Route path="/" element={<Homepage />} />
                         <Route path="/aboutme" element={<Aboutme />} />
                         <Route path="/menu" element={<Menu />} />
-                        <Route path="/BookingPage" element={<BookingForm avaliableTimes={state}/>} />
+                        <Route path="/BookingPage" element={<BookingPage/>} />
                         <Route path="/order_online" element={<Order_online />} />
                         <Route path="/login" element={<Login/>} />
                     </Routes>

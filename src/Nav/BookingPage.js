@@ -1,28 +1,41 @@
-import { useReducer, useState } from 'react';
 import './BookingPage.css'
+import BookingForm from './BookingForm';
+import { useEffect, useReducer, useState } from 'react';
+import {fetchAPI,submitAPI} from '../api'
+import { useNavigate } from "react-router-dom";
 
-function BookingForm (props) {
+function BookingPage () {
+    const date = new Date();
+    function initializeTimes (){
+        return (fetchAPI(date));
+    }
+
+    function updateTimes (state, action){
+        let newState;
+        switch (action.type){
+            case 'Update_Time':
+                const newDate = new Date(action.payload);
+                return fetchAPI(newDate)
+                break;
+            default:
+                throw new Error()
+        }
+        return newState;
+    }
+    const [state, dispatch] = useReducer(updateTimes, initializeTimes())
+
+    const navigate = useNavigate();
+
+    function submitForm(formData) {
+      const isSubmitted = submitAPI(formData);
+  
+      if (isSubmitted) {
+        navigate("/confirmed");
+      }
+    }
+
     return(
-        <form className='reservation_details'>
-            <label for="res-date"  data-testid="date">Choose date</label>
-            <input type="date" id="res-date"/>
-            <label for="res-time">Choose time</label>
-            <select id="res-time " data-testid="time">
-                {props.avaliableTimes()?.map((e) =>{
-                        return(
-                        <option>{e}</option>
-                        )
-                        })}
-            </select>
-            <label for="guests" >Number of guests</label>
-            <input type="number" placeholder="1" min="1" max="10" id="guests"/>
-            <label for="occasion">Occasion</label>
-            <select id="occasion">
-                <option>Birthday</option>
-                <option>Anniversary</option>
-            </select>
-            <input type="submit" value="Make Your reservation"/>
-        </form>
+        <BookingForm avaliableTimes={state} dispatch={dispatch} submitForm={submitForm}/>
     );
 }
-export default BookingForm;
+export default BookingPage;

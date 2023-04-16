@@ -10,3 +10,8 @@ test("test initial state", () => {
   const ss =screen.getByTestId('resv btn')
   expect(ss).toBeInTheDocument('Reservation')
 });
+
+test("Initial time", () =>{
+  const ss = render(<Nav/>)
+  expect(ss.initializeTimes).toHaveReturned()
+});
