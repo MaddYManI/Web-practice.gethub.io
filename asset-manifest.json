@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Web-practice.gethub.io/static/css/main.12222fab.css",
+    "main.js": "/Web-practice.gethub.io/static/js/main.b87a4ff9.js",
+    "static/js/787.635aedaa.chunk.js": "/Web-practice.gethub.io/static/js/787.635aedaa.chunk.js",
+    "static/media/greek salad.jpg": "/Web-practice.gethub.io/static/media/greek salad.bed423a1fab5b210e347.jpg",
+    "static/media/restauranfood.jpg": "/Web-practice.gethub.io/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
+    "static/media/bruchetta.png": "/Web-practice.gethub.io/static/media/bruchetta.800d987c70d9de31ab4a.png",
+    "static/media/Logo .svg": "/Web-practice.gethub.io/static/media/Logo .f72c913c48c5334f78f2c336ec36f22b.svg",
+    "index.html": "/Web-practice.gethub.io/index.html",
+    "main.12222fab.css.map": "/Web-practice.gethub.io/static/css/main.12222fab.css.map",
+    "main.b87a4ff9.js.map": "/Web-practice.gethub.io/static/js/main.b87a4ff9.js.map",
+    "787.635aedaa.chunk.js.map": "/Web-practice.gethub.io/static/js/787.635aedaa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12222fab.css",
+    "static/js/main.b87a4ff9.js"
+  ]
+}
