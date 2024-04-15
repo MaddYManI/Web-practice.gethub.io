@@ -85,12 +85,16 @@ li {
   font-family: 'Markazi Text', serif;
   font-size: 20px;
 }
+.links{
+  color: #495E57;
+}
 .links:visited {
   color: #495E57;
 }
 #toggle {
   display: none;
 }
+
 @media only screen and (max-width:600px) {
   .containers {
     grid-template-columns: 1fr;
@@ -111,7 +115,7 @@ li {
     list-style-type: none;
     transform: translateX(-500%);
     z-index: -1;
-    transition: 0.6s;
+    transition: 0.1s;
   }
   .list1 {
     display: none;

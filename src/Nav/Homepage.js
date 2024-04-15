@@ -5,6 +5,7 @@ import bruchetta from './bruchetta.png'
 import lemon_dessert from './lemon dessert.jpg'
 import bike_image from './bike image.png'
 import Footer from '../Footer';
+import Testimonals from './Testimonals'
 
 
 function Homepage () {
@@ -56,6 +57,7 @@ function Homepage () {
                     <img src={bike_image} alt ="Bike Image" className='bikeimage' />
                 </label>
             </div>
+            <Testimonals/>
             <Footer/>
         </body>
     )
