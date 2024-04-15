@@ -22,7 +22,7 @@
     padding: 10px;
     row-gap: 10px;
     background-color: white;
-}
+} 
 .user_review_ctn{
     grid-row: 1;
     display: grid;
